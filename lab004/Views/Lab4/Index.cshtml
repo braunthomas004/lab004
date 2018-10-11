@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<h1>@ViewData["greeting"]</h1>
+
+<h3>It is currently @ViewData["date1"] on @ViewData["date2"]</h3>
+
+<h4>There are currently @ViewData["date3"] days left in @ViewData["year1"]</h4>
+
+<a href="Waffles.cshtml">MAKE WAFFLES</a>
+<a hrer="@Url.Action("Waffles", "Lab4Controller")">Waffles</a>
