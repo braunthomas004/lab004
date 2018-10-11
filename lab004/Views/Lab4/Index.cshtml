@@ -3,13 +3,14 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<div class="jumbotron">
+    <h2>Index</h2>
+    <hr>
+    <h2 class="bg-info">@ViewData["greeting"]</h2>
 
-<h1>@ViewData["greeting"]</h1>
+    <h3>It is currently @ViewData["date1"] on @ViewData["date2"]</h3>
 
-<h3>It is currently @ViewData["date1"] on @ViewData["date2"]</h3>
+    <h4>There are currently @ViewData["date3"] days left in @ViewData["year1"]</h4>
 
-<h4>There are currently @ViewData["date3"] days left in @ViewData["year1"]</h4>
-
-<a href="Waffles.cshtml">MAKE WAFFLES</a>
-<a hrer="@Url.Action("Waffles", "Lab4Controller")">Waffles</a>
+    <a class="btn btn-danger href="/Waffles.cshtml" role="button">Make Waffles</a>
+</div>
